@@ -1,6 +1,6 @@
 [submodule "courses/nightmare"]
-	path = courses/nightmare
+	path = ctf/courses/nightmare
 	url = https://github.com/hoppersroppers/nightmare.git
 [submodule "crackmes/NoraCodes"]
-	path = crackmes/NoraCodes
+	path = ctf/crackmes/NoraCodes
 	url = https://github.com/NoraCodes/crackmes.git
