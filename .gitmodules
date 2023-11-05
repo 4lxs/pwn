@@ -4,3 +4,6 @@
 [submodule "crackmes/NoraCodes"]
 	path = ctf/crackmes/NoraCodes
 	url = https://github.com/NoraCodes/crackmes.git
+[submodule "ctf/crackmes/naivenom-reversing-list"]
+	path = ctf/crackmes/naivenom-reversing-list
+	url = https://github.com/naivenom/reversing-list.git
