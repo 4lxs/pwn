@@ -2,8 +2,11 @@
 	path = ctf/courses/nightmare
 	url = https://github.com/hoppersroppers/nightmare.git
 [submodule "crackmes/NoraCodes"]
-	path = ctf/crackmes/NoraCodes
+	path = ctf/exercises/re-NoraCodes
 	url = https://github.com/NoraCodes/crackmes.git
 [submodule "ctf/crackmes/naivenom-reversing-list"]
-	path = ctf/crackmes/naivenom-reversing-list
+	path = ctf/exercises/re-naivenom-reversing-list
 	url = https://github.com/naivenom/reversing-list.git
+[submodule "ctf/exercises/angr-angr_ctf"]
+	path = ctf/exercises/angr-angr_ctf
+	url = https://github.com/jakespringer/angr_ctf.git
