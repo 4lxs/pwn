@@ -3,6 +3,8 @@ services:
   pwn:
     container_name: pwn
     build: .
+    tty: true
+    stdin_open: true
     security_opt:
       - seccomp:unconfined
     cap_add:
