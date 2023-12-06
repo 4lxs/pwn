@@ -1,0 +1,3 @@
+/ctf/work/exercises/fuzz-Fuzzing-Module/exercise2/build/CMakeFiles/medium.dir
+/ctf/work/exercises/fuzz-Fuzzing-Module/exercise2/build/CMakeFiles/edit_cache.dir
+/ctf/work/exercises/fuzz-Fuzzing-Module/exercise2/build/CMakeFiles/rebuild_cache.dir

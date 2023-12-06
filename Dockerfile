@@ -33,23 +33,17 @@ RUN git clone https://github.com/radareorg/radare2 ~/radare2 && ~/radare2/sys/in
 RUN git clone --depth 1 https://github.com/pwndbg/pwndbg && \
     cd pwndbg && chmod +x setup.sh && ./setup.sh
 
-RUN git clone --depth 1 https://github.com/scwuaptx/Pwngdb.git ~/Pwngdb && \
-    cd ~/Pwngdb && mv .gdbinit .gdbinit-pwngdb && \
-    sed -i "s?source ~/peda/peda.py?# source ~/peda/peda.py?g" .gdbinit-pwngdb && \
-    echo "source ~/Pwngdb/.gdbinit-pwngdb" >> ~/.gdbinit
-
-RUN wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
-
-RUN git clone --depth 1 https://github.com/niklasb/libc-database.git libc-database && \
-    cd libc-database && ./get ubuntu debian || echo "/libc-database/" > ~/.libcdb_path && \
-    rm -rf /tmp/*
-
-RUN git clone https://github.com/AFLplusplus/AFLplusplus ~/AFLplusplus && cd ~/AFLplusplus && make distrib && make install
+# RUN git clone --depth 1 https://github.com/niklasb/libc-database.git libc-database && \
+#     cd libc-database && ./get ubuntu debian || echo "/libc-database/" > ~/.libcdb_path && \
+#     rm -rf /tmp/*
 
 ENV LLVM_CONFIG=llvm-config-${LLVM_VERSION}
 ENV AFL_SKIP_CPUFREQ=1
 ENV AFL_TRY_AFFINITY=1
 ENV AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1
+ENV LC_CTYPE=C.UTF-8
+
+RUN git clone https://github.com/AFLplusplus/AFLplusplus ~/AFLplusplus && cd ~/AFLplusplus && CC=clang-17 CXX=clang++-17 make distrib && make install
 
 WORKDIR /ctf/work
 COPY .tmux.conf /root/.tmux.conf
