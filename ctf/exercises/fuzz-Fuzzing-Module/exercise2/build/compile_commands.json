@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/lukas/Projects/pwn/ctf/exercises/fuzz-Fuzzing-Module/exercise2/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/medium.dir/airplane_object.cpp.o -c /Users/lukas/Projects/pwn/ctf/exercises/fuzz-Fuzzing-Module/exercise2/airplane_object.cpp",
+  "file": "/Users/lukas/Projects/pwn/ctf/exercises/fuzz-Fuzzing-Module/exercise2/airplane_object.cpp",
+  "output": "CMakeFiles/medium.dir/airplane_object.cpp.o"
+},
+{
+  "directory": "/Users/lukas/Projects/pwn/ctf/exercises/fuzz-Fuzzing-Module/exercise2/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/medium.dir/main.cpp.o -c /Users/lukas/Projects/pwn/ctf/exercises/fuzz-Fuzzing-Module/exercise2/main.cpp",
+  "file": "/Users/lukas/Projects/pwn/ctf/exercises/fuzz-Fuzzing-Module/exercise2/main.cpp",
+  "output": "CMakeFiles/medium.dir/main.cpp.o"
+}
+]
